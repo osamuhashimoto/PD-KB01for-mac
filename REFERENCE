@@ -1,0 +1,184 @@
+REFERENCE
+ pin-assign
+  http://www.buzzard.me.uk/jonathan/downloads/sunkbd.pdf
+
+  direct connect to type5 kbd to USB
+
+  https://github.com/stefanberndtsson/type5usb
+
+  Sun type 5 keycode and  USB USAGE ID tables
+
+  http://gis.sakura.ne.jp/sunkey/
+
+
+SUN Type5 キーボードのキーコードと USB Usage ID の変換表
+
+English
+Keytop	Japanese
+Keytop	RAW
+KeyCode	USB Key
+UsageID(E)	USB Key
+UsageID(J)	Japanese Mapping Note	SUN
+LED	USB
+LED
+(N/A)	　	00h	　	　	　	　	　
+Stop	　	01h	-	-	120(*1)	　	　
+Volume Down	　	02h	129	129	　	　	　
+Again	　	03h	-	-	121(*1)	　	　
+Volume Up	　	04h	128	128	　	　	　
+F1	　	05h	58	58	　	　	　
+F2	　	06h	59	59	　	　	　
+F10	　	07h	67	67	　	　	　
+F3	　	08h	60	60	　	　	　
+F11	　	09h	68	68	　	　	　
+F4	　	0Ah	61	61	　	　	　
+F12	　	0Bh	69	69	　	　	　
+F5	　	0Ch	62	62	　	　	　
+Alt Graph	KANA	0Dh	230	136	assign to "KATAKANA/HIRAGANA".
+(International 2)	10h	10h
+F6	　	0Eh	63	63	　	　	　
+(N/A)	　	0Fh	　	　	　	　	　
+F7	　	10h	64	64	　	　	　
+F8	　	11h	65	65	　	　	　
+F9	　	12h	66	66	　	　	　
+Alt	　	13h	226	226	　	　	　
+UP Arrow	　	14h	82	82	　	　	　
+Pause	　	15h	72	72	　	　	　
+Print Screen	　	16h	70	70	　	　	　
+Scroll Lock	　	17h	71	71	　	03h	03h
+Left Arrow	　	18h	80	80	　	　	　
+Props	　	19h	-	-	(*2)	　	　
+Undo	　	1Ah	-	-	122(*1)	　	　
+Down Arrow	　	1Bh	81	81	　	　	　
+Right Arrow	　	1Ch	79	79	　	　	　
+ESC	　	1Dh	41	41	　	　	　
+1 !	　	1Eh	30	30	　	　	　
+2 @	2 "	1Fh	31	31	　	　	　
+3 #	　	20h	32	32	　	　	　
+4 $	　	21h	33	33	　	　	　
+5%	　	22h	34	34	　	　	　
+6 ^	6 &	23h	35	35	　	　	　
+7 &	7 '	24h	36	36	　	　	　
+8 *	8 (	25h	37	37	　	　	　
+9 (	9 )	26h	38	38	　	　	　
+0 )	0	27h	39	39	　	　	　
+- _	- =	28h	45	45	　	　	　
+= +	^ ~	29h	46	46	It's NOT 53 in Japanese Keyboard.	　	　
+` ~	(YEN) |	2Ah	53	137	It's NOT 49 in Japanese Keyboard
+(International 3)	　	　
+Back Space	　	2Bh	42	42	　	　	　
+Insert	　	2Ch	73	73	　	　	　
+Mute	　	2Dh	127	127	　	　	　
+/ (10key)	　	2Eh	84	84	　	　	　
+* (10key)	　	2Fh	85	85	　	　	　
+(POWER)	　	30h	-	-	102(*1)	　	　
+Front	　	31h	-	-	(*2)	　	　
+. (10key)	　	32h	99	99	　	　	　
+Copy	　	33h	-	-	124(*1)	　	　
+Home	　	34h	74	74	　	　	　
+Tab	　	35h	43	43	　	　	　
+Q	　	36h	20	20	　	　	　
+W	　	37h	26	26	　	　	　
+E	　	38h	8	8	　	　	　
+R	　	39h	21	21	　	　	　
+T	　	3Ah	23	23	　	　	　
+Y	　	3Bh	28	28	　	　	　
+U	　	3Ch	24	24	　	　	　
+I	　	3Dh	12	12	　	　	　
+O	　	3Eh	18	18	　	　	　
+P	　	3Fh	19	19	　	　	　
+[ {	@ `	40h	47	47	(*3)	　	　
+] }	[ {	41h	48	48	(*3)	　	　
+Del	　	42h	76	76	　	　	　
+Compose	　	43h	101	101	assign to "Application" key.	02h	04h
+7 (10key)	　	44h	95	95	　	　	　
+8 (10key)	　	45h	96	96	　	　	　
+9 (10key)	　	46h	97	97	　	　	　
+- (10key)	　	47h	86	86	　	　	　
+Open	　	48h	-	-	(*2)	　	　
+Paste	　	49h	-	-	125(*1)	　	　
+End	　	4Ah	77	77	　	　	　
+(N/A)	　	4Bh	　	　	　	　	　
+Ctrl	　	4Ch	224	224	　	　	　
+A	　	4Dh	4	4	　	　	　
+S	　	4Eh	22	22	　	　	　
+D	　	4Fh	7	7	　	　	　
+F	　	50h	9	9	　	　	　
+G	　	51h	10	10	　	　	　
+H	　	52h	11	11	　	　	　
+J	　	53h	13	13	　	　	　
+K	　	54h	14	14	　	　	　
+L	　	55h	15	15	　	　	　
+; :	; +	56h	51	51	(*3)	　	　
+`	: *	57h	52	52	(*3)	　	　
+\ |	] }	58h	49	50	It's NOT 48 in Japanese Keyboard.	　	　
+Return	　	59h	40	40	　	　	　
+Enter (10key)	　	5Ah	88	88	　	　	　
+4 (10key)	　	5Bh	92	92	　	　	　
+5 (10key)	　	5Ch	93	93	　	　	　
+6 (10key)	　	5Dh	94	94	　	　	　
+0 (10key)	　	5Eh	98	98	　	　	　
+Find	　	5Fh	-	-	126(*1)	　	　
+Page Up	　	60h	75	75	　	　	　
+Cut	　	61h	-	-	123(*1)	　	　
+Num Lock	　	62h	83	83	　	01h	01h
+Left Shift	　	63h	225	225	　	　	　
+Z	　	64h	29	29	　	　	　
+X	　	65h	27	27	　	　	　
+C	　	66h	6	6	　	　	　
+V	　	67h	25	25	　	　	　
+B	　	68h	5	5	　	　	　
+N	　	69h	17	17	　	　	　
+M	　	6Ah	16	16	　	　	　
+, <	　	6Bh	54	54	　	　	　
+. >	　	6Ch	55	55	　	　	　
+/ ?	　	6Dh	56	56	　	　	　
+Right Shift	　	6Eh	229	229	　	　	　
+(Line Feed)	\ _	6Fh	-	135	International 1	　	　
+1 (10key)	　	70h	89	89	　	　	　
+2 (10key)	　	71h	90	90	　	　	　
+3 (10key)	　	72h	91	91	　	　	　
+(N/A)	KAKUTEI	73h	-	139	assign to "MUHENKAN"
+(International 5)	　	　
+(N/A)	HENKAN	74h	-	138	International 4	　	　
+(N/A)	Japanese
+ON-OFF	75h	-	53	"HANKAKU/ZENKAKU". 
+Not LANG 5!	　	　
+Help	　	76h	-	-	117(*1)	　	　
+Caps Lock	　	77h	57	57	　	04h	02h
+Left Meta	　	78h	227	227	Left Windows	　	　
+Space	　	79h	44	44	　	　	　
+Right Meta	　	7Ah	231	231	Right Windows	　	　
+Page Down	　	7Bh	78	78	　	　	　
+(N/A)	　	7Ch	　	　	　	　	　
++ (10key)	　	7Dh	87	87	　	　	　
+(N/A)	　	7Eh	　	　	　	　	　
+　	　	7Fh	　	　	Idle state, all Keys UP.	　	　
+(*1)These are defined as noted by "HID Usage Table v.1.12", but useless in windows environment.
+(*2)These are not defined in "HID Usage Table".
+(*3)very confusing !
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+http://ichiro.nnip.org/osx/HHKPS2USBDriver/index.html
+によるとMETAキーに変換、無変換キーをマップするPS2/USBコンバーターが主流らしいが
+手持ちのRC-U2MKはなんのイベントも送ってきていない模様。
+
+
+
+PD-KB2では万事問題なしと書いてあるのだが、dellの日本語キーボードを指しても変換、無変換だけイベントが出てこないので、
+やっぱり対応してないみたい。
+
+
+https://www.jaist.ac.jp/~fujieda/ps2usb/
+
+
+itibank.co.jp/JPGCB/JSO/signon/ProcessUsernameSignon.do
+USB bluetoothのドングルくっつければ、普通に送信できるみたい。BTシールド買わずに、電源＋ドングルを別付けにすることもできそう。
+
+KBDケーブルはマイクロUSB延長ケーブルをつかってマイクロUSB接続にする。
+
+
